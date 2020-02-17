@@ -1,0 +1,14 @@
+@media print {
+    @page{ size:auto; margin:5mm; }
+    a.anchor, div.action-bar, .section-action { display:none; }
+    .glyphicon { display:none; }
+    a[href]:after { content:"" !important; }
+    .panel { border: 0; }
+}
+
+/*!
+* AerWebCopy Engine [version 6.1.1]
+* Copyright Aeroson Systems & Co.
+* File mirrored from https://courses.codepath.com/stylesheets/print.css
+* At UTC time: 2020-02-16 22:16:49.062331
+*/

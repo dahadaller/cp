@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US"><!--
+
+* AerWebCopy Engine [version 6.1.1]
+* Copyright Aeroson Systems & Co.
+* File mirrored from https://courses.codepath.com/courses/advanced_software_eng/unit/11#!overview
+* At UTC time: 2020-02-16 22:17:19.812131
+
+--><head><title>Week 11 - Advanced Software Engineering | CodePath Courses</title><link href="../../../assets-compiled/45343e60__application.css" rel="stylesheet" type="text/css"><link href="../../../stylesheets/5aa27339__print.css" media="print" rel="stylesheet" type="text/css"><meta charset="UTF-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="noindex, nofollow" name="robots"><script data-api_key="d6442453" data-environment="production" src="../../../../js.honeybadger.io/v0.4/46b49c45__honeybadger.min.js" type="text/javascript"></script><script async="" src="../../../../www.googletagmanager.com/gtag/a66ae154__js.js"></script><script type="text/javascript">// Google analytics setup
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-47712505-3', {
+  'user_id': "20280"
+});
+// Alert browser issues!
+// https://browser-update.org/#test-bu
+var $buoop = {vs:{i:10,f:-4,o:-4,s:8,c:-4},api:4};
+function $buo_f(){
+ var e = document.createElement("script");
+ e.src = "//browser-update.org/update.min.js";
+ document.body.appendChild(e);
+};
+try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+catch(e){window.attachEvent("onload", $buo_f)}</script></head><body><div class="navbar navbar-default hidden-print" id="main-nav"><div class="container"><div class="navbar-header"><button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/">CodePath Courses</a></div><div class="navbar-collapse collapse"><ul class="nav navbar-nav"><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">Courses <b class="caret"></b></a><ul class="dropdown-menu"><li class="active"><a href="../../416426db__advanced_software_eng.html">Advanced Software Engineering</a></li><li><a href="../../0e9791e8__cybersecurity_university.html">Cybersecurity University</a></li></ul></li></ul><ul class="nav navbar-nav"><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">Quick Actions <b class="caret"></b></a><ul class="dropdown-menu"><li><a target="_blank" href="../../../../apply.codepath.com/attendance/advanced-software-engineering-summer-2019/excused-absence/file_326cd0b9.html"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>&#160;&#160;Request Excused Absence</a></li><li><a target="_blank" href="../../../../discussions.codepath.com/courses/advanced_software_eng/questions/6e89333c__new.html"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>&#160;&#160;Ask a Question</a></li><li><a target="_blank" href="../../../../apply.codepath.com/group-formation/advanced-software-engineering-summer-2019/ideas/file_f7d913cb.html"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>&#160;&#160;Add an App Idea</a></li><li><a target="_blank" href="../../../../discussions.codepath.com/courses/advanced_software_eng/notes/b2be2eb3__new.html"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span>&#160;&#160;Post a Note</a></li><li><a target="_blank" href="../../../../apply.codepath.com/organizations/codepathorg/cohorts/179/participant/withdraw/file_36827b4a.html"><span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>&#160;&#160;Withdraw from Course</a></li></ul></li></ul><ul class="nav navbar-nav navbar-right"><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" style="overflow:hidden"><div class="pull-left"><img width="20" class="img-circle img-responsive" src="../../../../avatars3.githubusercontent.com/u/5c416262__14141688.jpg"></div>&#160;<div class="pull-right">Steven Melamud <b class="caret"></b></div></a><ul class="dropdown-menu"><li><a data-method="delete" href="../../../339d23fb__sessions.html">Logout</a></li></ul></li></ul></div></div></div><div class="container"><div class="title clearfix"><h1>Advanced Software Engineering</h1><p class="alert alert-info hidden-print">Need help?&#160;Post on our <a target="blank" class="alert-link" href="../../../../discussions.codepath.com/file_ea13434d.html">discussion system</a>&#160;or email us at <a class="alert-link" href="../../../../../../../../../../31953362__support%40codepath.html">support@codepath.org</a></p></div><div class="row"><div class="col-md-2 sidebar hidden-print"><ul class="nav nav-pills nav-stacked"><li><a href="../pages/191f81ee__bootcamp_structure.html">Overview</a></li><li><a href="./8bac841e__1.html"><span>Week 1 &#160;</span></a></li><li><a href="./de6b1f8f__2.html"><span>Week 2 &#160;</span></a></li><li><a href="./de6816aa__3.html"><span>Week 3 &#160;</span></a></li><li><a href="./edcbee9e__4.html"><span>Week 4 &#160;</span></a></li><li><a href="./70abd764__5.html"><span>Week 5 &#160;</span></a></li><li><a href="./5923ce66__6.html"><span>Week 6 &#160;</span></a></li><li><a href="./acd856a1__7.html"><span>Week 7 &#160;</span></a></li><li><a href="./d99406e4__8.html"><span>Week 8 &#160;</span></a></li><li><a href="./297903ed__9.html"><span>Week 9 &#160;</span></a></li><li><a href="./0211c7e0__10.html"><span>Week 10 &#160;</span></a></li><li class="active"><a href="./381b5c59__11.html"><span>Week 11 &#160;</span></a></li><li><a href="./a4ee6ebb__12.html"><span>Week 12 &#160;</span></a></li><li><a href="../pages/f9dda471__resources.html">Resources</a></li><li><a href="../pages/844b6942__submission_guide.html">Submission Guide</a></li><li><a href="../pages/d73dc72b__career_center.html">Career Center</a></li>&#160;</ul></div><div class="col-md-10"><ul class="nav nav-tabs hidden-print"><li><a data-toggle="tab" href="#overview"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>&#160;Overview</a></li><li><a data-toggle="tab" href="#session_one">Session #1</a></li><li><a data-toggle="tab" href="#session_two">Session #2</a></li><li><a data-toggle="tab" href="#assignment">Assignment</a></li><li><a data-toggle="tab" href="#links"><span class="glyphicon glyphicon-book" aria-hidden="true"></span>&#160;Resources</a></li></ul><div class="tab-content section-content" style="height: 1000px;"><div class="tab-pane" id="overview"><div class="panel panel-default"><div class="panel-body markdown-body"><div class="action-bar pull-right hidden-print"></div><h2><a class="anchor" id="heading-week-11-review" href="#heading-week-11-review"><span class="glyphicon glyphicon-link"></span></a>Week 11 - Review</h2>
+<p>This week will be a project-centered review week. We will review key topics such as Greedy Algorithms, Dynamic Programming, and Backtracking while working on a project that might involve successfully using one or more of these techniques</p>
+<h3><a class="anchor" id="heading-goals" href="#heading-goals"><span class="glyphicon glyphicon-link"></span></a>Goals</h3>
+<ul>
+<li>Review advanced algorithms: Greedy, Dynamic Programming, Backtracking</li>
+</ul>
+<h3><a class="anchor" id="heading-before-our-weekly-session" href="#heading-before-our-weekly-session"><span class="glyphicon glyphicon-link"></span></a>Before our weekly session</h3>
+<p>Since this is a review and project week, we will not have any warm up questions that you will be required to submit. However, this is a great time for you to go back to topics and problems from the past few weeks that you had found more challenging.</p>
+<p>It would also be advantageous to get an overview of what the project entails so you can ask questions early on. <strong>Aim to spend 5-10 hours</strong> on the project.</p>
+<h3><a class="anchor" id="heading-after-the-session" href="#heading-after-the-session"><span class="glyphicon glyphicon-link"></span></a>After the session</h3>
+<p><strong>Due before Monday, August 19th at 11:59pm PDT</strong></p>
+<p>The only thing that you&#8217;re required to submit this week will be the code and analysis summary from the project, as outlined in the project spec <a href="../../../../docs.google.com/document/d/6216db1a__19E3YeClo2cT85U9tIxE2cDtxbFNDmFREfeH3raIJkbc.html">here</a>. You will need to create a new GitHub repo, and push all your code and analysis summary to the repo. For submission, you will be submitting the link to your Github repo.</p>
+</div></div></div><div class="tab-pane" id="session_one"><div class="panel panel-default"><div class="panel-body markdown-body"><div class="action-bar pull-right hidden-print"></div><h2><a class="anchor" id="heading-review-week-11" href="#heading-review-week-11"><span class="glyphicon glyphicon-link"></span></a>Review Week 11</h2>
+<h3><a class="anchor" id="heading-lecture" href="#heading-lecture"><span class="glyphicon glyphicon-link"></span></a>Lecture</h3>
+<p><a href="../../../../docs.google.com/presentation/d/a82ef5bc__1iNHXB3TTqrHVMXfi6Zh0maZx2o2a0SWj4cP5rQ3JHWs.html">Slides</a></p>
+<h3><a class="anchor" id="heading-in-class-exercises" href="#heading-in-class-exercises"><span class="glyphicon glyphicon-link"></span></a>In class exercises</h3>
+<p>We will be working on more open ended programming problems in groups with a focus of understanding the spec and test case generation.</p>
+<p>Create a new <a href="../../../../codeinterview.io/file_070d5527.html">codepad</a> document to work on.</p>
+<p>For the following questions:</p>
+<ol>
+<li>
+<p>Understand the problem. Besides the given example(s) try to come up with some of your own examples for the problem. Capture a useful universe of these examples as test cases.</p>
+</li>
+<li>
+<p>Match. Does this remind you of coding patterns you have used before, again most important to generate test cases from this.</p>
+</li>
+<li>
+<p>Prototype and implementation. Write code that addresses the test cases. Test driven development can be a very successful style for these problems.</p>
+</li>
+</ol>
+<p>You will be given 25 - 30 minutes per problem and work in groups of 2 - 3.</p>
+<ol>
+<li>
+<p>Connect Four - <a href="../../../../en.wikipedia.org/wiki/217bb275__Connect_Four.html">Connect Four</a> is a game where two players take turns  dropping their color discs into a vertically suspended grid. The game ends when a player adds a disc to the playing grid that connects four discs of their color. The connected discs can be in a horizontal, vertical or diagonal line.  Your task is to write a class that models the game. The main method of your class <code>move</code> needs to be able to 1) Print "Game Over" when there are no more moves possible, 2) Print "Player X" wins win either player 1 or player 2 "connect four".</p>
+</li>
+<li>
+<p>Simple Transaction Database - Create a simple key/value in memory database. The database must support the following api:</p>
+<ol>
+<li>
+<code>GET key</code> - returns the value stored in key</li>
+<li>
+<code>SET key value</code> - sets the value for key to be value</li>
+<li>
+<code>COUNT value</code> - gives the count for the number of values</li>
+<li>
+<code>DELETE key</code> - deletes the key</li>
+<li>
+<code>BEGIN</code> begins a transaction</li>
+<li>
+<code>ROLLBACK</code> rollsback the current transaction</li>
+<li>
+<code>COMMIT</code> - makes all current transactions (nesting is allowed) permanent.</li>
+</ol>
+<p>E.g.,</p>
+<div class="highlighter-rouge language-sql">
+<pre class="highlight"><code><span class="k">SET</span> <span class="n">a</span> <span class="mi">10</span>
+<span class="k">GET</span> <span class="n">a</span> <span class="o">#</span> <span class="o">=&gt;</span> <span class="mi">10</span>
+<span class="k">COUNT</span> <span class="mi">10</span> <span class="o">#</span> <span class="o">=&gt;</span> <span class="mi">1</span>
+<span class="k">BEGIN</span>
+<span class="k">SET</span> <span class="n">a</span> <span class="mi">20</span>
+<span class="k">BEGIN</span>
+<span class="k">COUNT</span> <span class="mi">10</span> <span class="o">#</span> <span class="o">=&gt;</span> <span class="mi">0</span>
+<span class="k">DELETE</span> <span class="n">a</span>
+<span class="k">COUNT</span> <span class="mi">20</span> <span class="o">#</span> <span class="o">=&gt;</span> <span class="mi">0</span>
+<span class="k">ROLLBACK</span>
+<span class="k">COUNT</span> <span class="mi">20</span> <span class="o">#</span> <span class="o">=&gt;</span> <span class="mi">1</span>
+<span class="k">ROLLBACK</span>
+<span class="k">GET</span> <span class="n">a</span> <span class="o">#</span> <span class="o">=&gt;</span> <span class="mi">10</span>
+</code></pre>
+</div>
+</li>
+<li>
+<p>Filter Language - You will create a simple data structure that is a list of records. The records have simple string value fields. The fields are <code>a</code>, <code>b</code>, <code>c</code>. The values will only be floating point. You will create a function that will take the records list that you create and also a simple json description of filter operations. You need to design your json schema to support the following abilities:</p>
+<ol>
+<li>Support filtering with <code>!=, ==, &lt;, &gt;</code> on any of the fields</li>
+<li>support boolean logic <code>AND</code> and <code>OR</code> combining your filters</li>
+<li>not every record will have all fields.</li>
+</ol>
+<p>E.g.,</p>
+<p>Your json data structure should support the following type of filtering:</p>
+<div class="highlighter-rouge language-javascript">
+<pre class="highlight"><code><span class="nx">a</span> <span class="o">&lt;</span> <span class="mi">10</span> <span class="nx">AND</span> <span class="nx">b</span> <span class="o">!=</span> <span class="mi">5</span> <span class="nx">OR</span> <span class="nx">c</span> <span class="o">&gt;</span> <span class="mi">2</span>
+</code></pre>
+</div>
+<p>And you need to demonstrate this on a dataset that you write as well. IO is not important, i.e., you can just instantiate these data sets in memory.</p>
+</li>
+</ol>
+</div></div></div><div class="tab-pane" id="session_two"><div class="panel panel-default"><div class="panel-body markdown-body"><div class="action-bar pull-right hidden-print"></div><h2><a class="anchor" id="heading-week-11-review-session-2" href="#heading-week-11-review-session-2"><span class="glyphicon glyphicon-link"></span></a>Week 11 Review - Session 2</h2>
+<h3><a class="anchor" id="heading-lecture" href="#heading-lecture"><span class="glyphicon glyphicon-link"></span></a>Lecture</h3>
+<h4><a class="anchor" id="heading-ask-me-anything-questions-panel" href="#heading-ask-me-anything-questions-panel"><span class="glyphicon glyphicon-link"></span></a>"Ask me anything" questions panel</h4>
+<ul>
+<li>Instructor Tony
+<ul>
+<li>Was a neuroscientist before getting my first engineering job, but had more fun programming.</li>
+<li>Wrote a fitness book.</li>
+<li>Currently working on Computer Vision in OCR team at Google.</li>
+</ul>
+</li>
+<li>Instructor Caren
+<ul>
+<li>Didn't know anything about programming until my first class in sophomore year of college.</li>
+<li>After graduating, worked on a few startups doing Android.</li>
+<li>Now working on Android at Google to help developers write great Android apps.</li>
+</ul>
+</li>
+<li>Guest Speaker Nhan Nguyen
+<ul>
+<li>CTO/Cofounder of new media startup Lumanu Inc.</li>
+<li>Studied math rather than CS.</li>
+<li>His company writes in Clojure. Go Lisp!</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="heading-mock-interview" href="#heading-mock-interview"><span class="glyphicon glyphicon-link"></span></a>Mock Interview</h3>
+<p>This segment of the class will be a practice interviewing session where everyone will be paired up with a partner. <a href="../../../../docs.google.com/document/d/1zbUY9vb8kdblmo793jz88w2YJnYotBJ0g3-8ePW4wFQ/efc24e42__edit.html">This guide</a> gives an insight on how to:</p>
+<ol>
+<li>Conduct a productive mock interview (when playing the role of the interviewer)</li>
+<li>Be a proactive interviewee</li>
+</ol>
+<p>You should spend 30 minutes on one problem before switching roles with your partner and moving on to their question.</p>
+<p>First, introduce yourself to your partner. Then, one person should start off as the interviewer, and share the collabedit link they created before the session, where the two of you will collaborate.</p>
+<h4><a class="anchor" id="heading-challenge-questions" href="#heading-challenge-questions"><span class="glyphicon glyphicon-link"></span></a>Challenge Questions:</h4>
+<ol>
+<li><a href="../../../../leetcode.com/problems/5741953b__longest-consecutive-sequence.html">Longest Consecutive Sequence</a></li>
+<li><a href="../../../../leetcode.com/problems/881ed32d__maximal-rectangle.html">Maximal Rectangle</a></li>
+</ol>
+<h4><a class="anchor" id="heading-role-of-the-interviewer" href="#heading-role-of-the-interviewer"><span class="glyphicon glyphicon-link"></span></a>Role of the interviewer:</h4>
+<ul>
+<li>Help the interviewee understand the problem and answer any clarifying questions</li>
+<li>Provide useful hints to help move the problem along</li>
+<li>Help the interviewee debug their code once they&#8217;ve mapped out a solution</li>
+</ul>
+<p>What the interviewer should <strong>NOT</strong> do:</p>
+<ul>
+<li>Not pay attention while the interviewee is working through their solution</li>
+<li>Blatantly tell the interviewee the most optimal solution within 10 minutes of them being stuck. Instead, try to provide helpful hints that will guide them in the right direction</li>
+<li>Take over typing for the interviewee because they are stuck</li>
+</ul>
+<h4><a class="anchor" id="heading-role-of-the-interviewee" href="#heading-role-of-the-interviewee"><span class="glyphicon glyphicon-link"></span></a>Role of the interviewee:</h4>
+<ul>
+<li>Understand the question being asked and think through the trade-offs of different approaches</li>
+<li>Work through the problem and come to a working solution</li>
+</ul>
+<p>What the interviewee should <strong>NOT</strong> do:</p>
+<ul>
+<li>Immediately start writing code after reading the question. Instead, ask clarifying questions and discuss the approach you have in mind. Talk out loud about possible approaches and their tradeoffs. Think through a couple test cases to see if your approach would work.</li>
+<li>Stay silent for more than 3 minutes. If you find yourself having a mental block, try to articulate what part you&#8217;re stuck on. Perhaps there&#8217;s certain terminology you&#8217;re not confident with or you can&#8217;t visualize a part of the problem you&#8217;re trying to solve. Talking out loud helps your interviewer guide you.</li>
+</ul>
+<h4><a class="anchor" id="heading-recap-of-interactive-session" href="#heading-recap-of-interactive-session"><span class="glyphicon glyphicon-link"></span></a>Recap of interactive session</h4>
+<p>We'll recap the each interview question from the mock interview session.</p>
+</div></div></div><div class="tab-pane" id="assignment"><div class="panel panel-default"><div class="panel-body markdown-body"><div class="action-bar pull-right hidden-print"><span class="section-action"><button class="btn btn-primary" onclick="LightBox.showLightBoxWithIds('lightbox-assignments', 'form-assignments')"><span class="glyphicon glyphicon-open" aria-hidden="true"></span>&#160;Submit</button></span>
+<div class="lightbox" id="lightbox-assignments"><form action="../../../submissions/4179c109__create_or_update_submission.html" accept-charset="UTF-8" class="form-horizontal form-submission" id="form-assignments" method="post"><div class="title"></div><button aria-label="Close" class="close" type="button"><span aria-hidden="true"> &#215;</span></button><h2>Submission</h2><p>Please enter your assignment submission info. After you submit, you can keep working and resubmit at any time.</p><label>GitHub Project URL</label><div class="form-group has-feedback"><div class="col-sm-12"><input type="text" name="git_repo_url" placeholder="https://github.com/username/Twitter" required="required" class="form-control" pattern="^https?:\/\/github.com\/.{2,}?\/.{2,}$" data-error="Please enter the url to your GitHub Repo (Example: https://github.com/username/TwitterLite)"><span aria-hidden="true" class="glyphicon form-control-feedback"></span><div class="help-block with-errors"></div></div></div><label>GIF or MP4 Video URL (Drag a GIF here to upload)</label><div class="form-group has-feedback"><div class="col-sm-12"><input type="text" name="gif_remote_url" placeholder="https://i.imgur.com/xyz.gif" required="required" class="form-control" pattern="^https?:\/\/.+?\/.+?\.(gifv?|mp4)(.+)?" data-error="Please enter a link to your GIF or MP4 (Example: https://i.imgur.com/U3a7L.gif)"><span aria-hidden="true" class="glyphicon form-control-feedback"></span><div class="help-block with-errors"></div></div></div><label>Hours Spent</label><div class="form-group"><div class="col-sm-12"><input type="number" name="hours_spent" placeholder="Number of hours" required="required" class="form-control" min="0" max="99" step="0.1"></div></div><label>Notes</label><div class="form-group"><div class="col-sm-12"><textarea name="notes" rows="2" cols="" placeholder="Any additional notes" class="form-control noresize">
+</textarea></div></div><div class="form-group"><div class="col-sm-12"><input type="submit" value="Submit" class="btn btn-primary"></div></div><input type="hidden" name="course" value="advanced_software_eng"><input type="hidden" name="unit" value="11"><input type="hidden" name="id"><input type="hidden" name="assignment" value="1263"><input type="hidden" name="redirect_anchor" value="assignment"></form></div></div><h2><a class="anchor" id="heading-assignment-11" href="#heading-assignment-11"><span class="glyphicon glyphicon-link"></span></a>Assignment 11</h2>
+<h3><a class="anchor" id="heading-due-before-monday-august-19th-at-1159pm-pdt" href="#heading-due-before-monday-august-19th-at-1159pm-pdt"><span class="glyphicon glyphicon-link"></span></a><strong>Due before Monday, August 19th at 11:59pm PDT</strong></h3>
+<p>The only assignment you have to turn in this week will be the work around the project. This assignment is optional. This means you will not be marked for not submitting it on time. However, for those people who chose to submit, we will still be evaluating your project and grading it based on the scoring rubric.</p>
+<p>The complete project spec and requirements <a href="../../../../docs.google.com/document/d/6216db1a__19E3YeClo2cT85U9tIxE2cDtxbFNDmFREfeH3raIJkbc.html">https://docs.google.com/document/d/19E3YeClo2cT85U9tIxE2cDtxbFNDmFREfeH3raIJkbc</a></p>
+<h3><a class="anchor" id="heading-to-submit-your-project-please-complete-this-hackerrank-http-hrgs-codepath-sudoku" href="#heading-to-submit-your-project-please-complete-this-hackerrank-http-hrgs-codepath-sudoku"><span class="glyphicon glyphicon-link"></span></a>To submit your project, please complete this HackerRank: <a href="../../../../hr.gs/532e3457__codepath-sudoku.html">http://hr.gs/codepath-sudoku</a>
+</h3>
+<p>The assessment will have you:</p>
+<ol>
+<li>Write test cases to robustly test a function that determines whether a Sudoku board is valid or not</li>
+<li>Write the code that solves the Sudoku puzzle</li>
+<li>Analyze your algorithm and provide motivation for your enhancements</li>
+</ol>
+</div></div></div><div class="tab-pane" id="links"><div class="panel panel-default"><div class="panel-body markdown-body"><div class="action-bar pull-right hidden-print"></div></div></div></div></div></div></div></div></body><script src="../../../assets-compiled/24094d0f__application.js"></script></html>

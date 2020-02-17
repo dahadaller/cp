@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en-US"><!--
+
+* AerWebCopy Engine [version 6.1.1]
+* Copyright Aeroson Systems & Co.
+* File mirrored from https://courses.codepath.com/courses/advanced_software_eng/unit/12#!overview
+* At UTC time: 2020-02-16 22:17:22.577539
+
+--><head><title>Week 12 - Advanced Software Engineering | CodePath Courses</title><link href="../../../assets-compiled/45343e60__application.css" rel="stylesheet" type="text/css"><link href="../../../stylesheets/5aa27339__print.css" media="print" rel="stylesheet" type="text/css"><meta charset="UTF-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="noindex, nofollow" name="robots"><script data-api_key="d6442453" data-environment="production" src="../../../../js.honeybadger.io/v0.4/46b49c45__honeybadger.min.js" type="text/javascript"></script><script async="" src="../../../../www.googletagmanager.com/gtag/a66ae154__js.js"></script><script type="text/javascript">// Google analytics setup
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-47712505-3', {
+  'user_id': "20280"
+});
+// Alert browser issues!
+// https://browser-update.org/#test-bu
+var $buoop = {vs:{i:10,f:-4,o:-4,s:8,c:-4},api:4};
+function $buo_f(){
+ var e = document.createElement("script");
+ e.src = "//browser-update.org/update.min.js";
+ document.body.appendChild(e);
+};
+try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+catch(e){window.attachEvent("onload", $buo_f)}</script></head><body><div class="navbar navbar-default hidden-print" id="main-nav"><div class="container"><div class="navbar-header"><button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/">CodePath Courses</a></div><div class="navbar-collapse collapse"><ul class="nav navbar-nav"><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">Courses <b class="caret"></b></a><ul class="dropdown-menu"><li class="active"><a href="../../416426db__advanced_software_eng.html">Advanced Software Engineering</a></li><li><a href="../../0e9791e8__cybersecurity_university.html">Cybersecurity University</a></li></ul></li></ul><ul class="nav navbar-nav"><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">Quick Actions <b class="caret"></b></a><ul class="dropdown-menu"><li><a target="_blank" href="../../../../apply.codepath.com/attendance/advanced-software-engineering-summer-2019/excused-absence/file_326cd0b9.html"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>&#160;&#160;Request Excused Absence</a></li><li><a target="_blank" href="../../../../discussions.codepath.com/courses/advanced_software_eng/questions/6e89333c__new.html"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>&#160;&#160;Ask a Question</a></li><li><a target="_blank" href="../../../../apply.codepath.com/group-formation/advanced-software-engineering-summer-2019/ideas/file_f7d913cb.html"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>&#160;&#160;Add an App Idea</a></li><li><a target="_blank" href="../../../../discussions.codepath.com/courses/advanced_software_eng/notes/b2be2eb3__new.html"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span>&#160;&#160;Post a Note</a></li><li><a target="_blank" href="../../../../apply.codepath.com/organizations/codepathorg/cohorts/179/participant/withdraw/file_36827b4a.html"><span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>&#160;&#160;Withdraw from Course</a></li></ul></li></ul><ul class="nav navbar-nav navbar-right"><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" style="overflow:hidden"><div class="pull-left"><img width="20" class="img-circle img-responsive" src="../../../../avatars3.githubusercontent.com/u/5c416262__14141688.jpg"></div>&#160;<div class="pull-right">Steven Melamud <b class="caret"></b></div></a><ul class="dropdown-menu"><li><a data-method="delete" href="../../../339d23fb__sessions.html">Logout</a></li></ul></li></ul></div></div></div><div class="container"><div class="title clearfix"><h1>Advanced Software Engineering</h1><p class="alert alert-info hidden-print">Need help?&#160;Post on our <a target="blank" class="alert-link" href="../../../../discussions.codepath.com/file_ea13434d.html">discussion system</a>&#160;or email us at <a class="alert-link" href="../../../../../../../../../../31953362__support%40codepath.html">support@codepath.org</a></p></div><div class="row"><div class="col-md-2 sidebar hidden-print"><ul class="nav nav-pills nav-stacked"><li><a href="../pages/191f81ee__bootcamp_structure.html">Overview</a></li><li><a href="./8bac841e__1.html"><span>Week 1 &#160;</span></a></li><li><a href="./de6b1f8f__2.html"><span>Week 2 &#160;</span></a></li><li><a href="./de6816aa__3.html"><span>Week 3 &#160;</span></a></li><li><a href="./edcbee9e__4.html"><span>Week 4 &#160;</span></a></li><li><a href="./70abd764__5.html"><span>Week 5 &#160;</span></a></li><li><a href="./5923ce66__6.html"><span>Week 6 &#160;</span></a></li><li><a href="./acd856a1__7.html"><span>Week 7 &#160;</span></a></li><li><a href="./d99406e4__8.html"><span>Week 8 &#160;</span></a></li><li><a href="./297903ed__9.html"><span>Week 9 &#160;</span></a></li><li><a href="./0211c7e0__10.html"><span>Week 10 &#160;</span></a></li><li><a href="./381b5c59__11.html"><span>Week 11 &#160;</span></a></li><li class="active"><a href="./a4ee6ebb__12.html"><span>Week 12 &#160;</span></a></li><li><a href="../pages/f9dda471__resources.html">Resources</a></li><li><a href="../pages/844b6942__submission_guide.html">Submission Guide</a></li><li><a href="../pages/d73dc72b__career_center.html">Career Center</a></li>&#160;</ul></div><div class="col-md-10"><ul class="nav nav-tabs hidden-print"><li><a data-toggle="tab" href="#overview"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>&#160;Overview</a></li><li><a data-toggle="tab" href="#warmups"><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>&#160;Warmups</a></li><li><a data-toggle="tab" href="#session_one">Session #1</a></li><li><a data-toggle="tab" href="#session_two">Session #2</a></li><li><a data-toggle="tab" href="#assignment">Assignment</a></li><li><a data-toggle="tab" href="#links"><span class="glyphicon glyphicon-book" aria-hidden="true"></span>&#160;Resources</a></li></ul><div class="tab-content section-content" style="height: 1000px;"><div class="tab-pane" id="overview"><div class="panel panel-default"><div class="panel-body markdown-body"><div class="action-bar pull-right hidden-print"></div><h1><a class="anchor" id="heading-week-12-recap-and-design-questions" href="#heading-week-12-recap-and-design-questions"><span class="glyphicon glyphicon-link"></span></a>Week 12 - Recap and Design Questions</h1>
+<p>This week we will be practicing design questions and wrapping up the course with a final HackerRank that covers material from throughout the course.</p>
+<h3><a class="anchor" id="heading-goals" href="#heading-goals"><span class="glyphicon glyphicon-link"></span></a>Goals</h3>
+<ul>
+<li>Practice with general design questions</li>
+<li>More practice with topics covered throughout the course with a comprehensive <a href="../../../../hr.gs/59da0cda__codepath-design.html">HackerRank assessment</a>
+</li>
+</ul>
+<h2><a class="anchor" id="heading-before-our-weekly-session" href="#heading-before-our-weekly-session"><span class="glyphicon glyphicon-link"></span></a>Before our weekly session</h2>
+<h4><a class="anchor" id="heading-due-before-monday-august-19th-at-1159pm-pdt" href="#heading-due-before-monday-august-19th-at-1159pm-pdt"><span class="glyphicon glyphicon-link"></span></a><strong>Due before Monday, August 19th at 11:59pm PDT</strong></h4>
+<p>Check out the <a href="#!warmups">warmups session tab</a> to review the required tasks before our weekly session. This will include reviewing basic concepts related to this week's topic and doing a few easy/medium coding problems. <strong>Plan to spend between 1 and 5 hours on these exercises.</strong>
+if you haven&#8217;t tried Pramp yet, now might be a great time to test our your skills in a mock interview.
+If you sign up with <a href="../../../../pramp.com/promo/2ae50d0b__codepath.html">http://pramp.com/promo/codepath</a>, you&#8217;ll get unlimited interviews (I think it&#8217;s normally limited to 3). If you already have an account, you might need to create a new account to get the unlimited interviews.
+The interviewers can be hit or miss, but even with a less experienced interviewer, it&#8217;s great practice for your technical communication, and to see if you can quickly apply the UMPIRE method in a timed setting.</p>
+<h2><a class="anchor" id="heading-after-the-session" href="#heading-after-the-session"><span class="glyphicon glyphicon-link"></span></a>After the session</h2>
+<h4><a class="anchor" id="heading-due-before-monday-august-26th-at-1159pm-pdt" href="#heading-due-before-monday-august-26th-at-1159pm-pdt"><span class="glyphicon glyphicon-link"></span></a><strong>Due before Monday, August 26th at 11:59pm PDT</strong></h4>
+<p>Check out the <a href="#!assignment">assignment tab</a> to review the required tasks after attending our weekly session. There will be some post-session questions that you can work on throughout the week to help solidify your understanding. Some problems may be optional, but it is highly recommended that you do all of them. Working on these questions will help you succeed in the final HackerRank assessment for this unit. The HackerRank assessment will be a mix of multiple choice and coding challenges. <strong>Plan to spend 90 minutes on this assessment.</strong></p>
+<h4><a class="anchor" id="heading-optional-additional-mock-interviews" href="#heading-optional-additional-mock-interviews"><span class="glyphicon glyphicon-link"></span></a>(Optional) Additional Mock Interviews!</h4>
+<p>If you want more mock interviewing practice, and haven&#8217;t tried <a href="../../../../pramp.com/promo/2ae50d0b__codepath.html">Pramp</a> yet, now might be a great time to test our your skills in a virtual mock interview setting.</p>
+<p>If you <a href="../../../../pramp.com/promo/2ae50d0b__codepath.html">sign up with our promo code</a>, you&#8217;ll get unlimited interviews (normally limited to 3). If you already have an account, you might need to create a new account to get the unlimited interviews.</p>
+<p>The interviewers can be hit or miss, but even with a less experienced interviewer, it&#8217;s great practice for your technical communication, and to see if you can quickly apply the UMPIRE method in a remote interview timed setting.</p>
+<h2><a class="anchor" id="heading-panel-3-establishing-your-place-in-the-tech-industry" href="#heading-panel-3-establishing-your-place-in-the-tech-industry"><span class="glyphicon glyphicon-link"></span></a>Panel 3 - Establishing Your Place in the Tech Industry</h2>
+<h3><a class="anchor" id="heading-overview" href="#heading-overview"><span class="glyphicon glyphicon-link"></span></a>Overview</h3>
+<p>This week will be the last of the three panel workshops where you'll get to meet and interact with inspiring industry professionals.</p>
+<h3><a class="anchor" id="heading-session-details" href="#heading-session-details"><span class="glyphicon glyphicon-link"></span></a>Session Details</h3>
+<ul>
+<li>
+<p><strong>Saturday, August 24th</strong></p>
+</li>
+<li>
+<p><strong>&#128421; Join the <a href="../../../../zoom.us/j/e5112554__853158316.html">Session Video Call</a></strong></p>
+</li>
+</ul>
+<h3><a class="anchor" id="heading-this-weeks-industry-panel" href="#heading-this-weeks-industry-panel"><span class="glyphicon glyphicon-link"></span></a>This Week's Industry Panel</h3>
+<p>Navigating the workplace and leveling up is hard for any software engineer, but it can get especially tricky for underrepresented engineers. Let&#8217;s change this! Comcast is hosting our final summer panel discussion focused on the importance of building an internal network, finding mentors, and securing sponsorship within organizations to advance your careers in technology.</p>
+<h5><a class="anchor" id="heading-action-required" href="#heading-action-required"><span class="glyphicon glyphicon-link"></span></a>&#129338;ACTION REQUIRED</h5>
+<div class="alert alert-warning inset-text">
+We've assembled an amazing group of professionals with great experiences in the tech industry. Please take a moment to complete the following steps ahead of the session.
+<ol>
+<li>Learn about our panelists (listed below) by clicking their names and visiting their LinkedIn profiles.</li>
+<li>
+<strong><a href="../../../../app.sli.do/event/uuczmk9n/live/f207565a__questions.html">&#128221;Post and upvote questions</a></strong> for our panelists!</li>
+</ol>
+<p></p></div>
+<h5><a class="anchor" id="heading-panelists" href="#heading-panelists"><span class="glyphicon glyphicon-link"></span></a>PANELISTS</h5>
+<ul>
+<li>
+<p><strong><a href="../../../../www.linkedin.com/in/alexa-chittams/file_ade694a2.html">Alexa Chittams</a></strong>,  Software Engineer at Comcast NBC Universal</p>
+</li>
+<li>
+<p><strong><a href="../../../../www.linkedin.com/in/cemah-tudae-torboh/file_61becd41.html">Cemah Tudae-Torboh</a></strong>, Software Engineer at Comcast</p>
+</li>
+<li>
+<p><strong><a href="../../../../www.linkedin.com/in/834d521c__denineguy.html">Denine Guy</a></strong>, Software Engineer at Comcast</p>
+</li>
+<li>
+<p><strong><a href="../../../../www.linkedin.com/in/muminransom/file_8a942954.html">Mumin Ransom</a></strong>,  Machine Learning Platform Development Team Lead at Comcast</p>
+</li>
+</ul>
+<h5><a class="anchor" id="heading-moderator" href="#heading-moderator"><span class="glyphicon glyphicon-link"></span></a>MODERATOR</h5>
+<ul>
+<li>
+<strong><a href="../../../../www.linkedin.com/in/morganrichardson2013/file_44c7accf.html">Morgan Richardson</a></strong>, Career Services Manager at CodePath</li>
+</ul>
+</div></div></div><div class="tab-pane" id="report"><div class="panel panel-default"><div class="panel-body"><div class="row"><div class="col-md-11 markdown-body"><h2>Assigment Summary</h2><p>The following is the summary of your assignment for this unit:</p></div></div><div class="row"><div class="col-md-8"><ul class="list-group"><li class="list-group-item"><span class="label label-info label-badge">Good</span><strong>Overall Rank</strong></li><li class="list-group-item"><span class="label label-success label-badge">#48 / 81</span><strong>Rank Number</strong></li><li class="list-group-item"><span class="label label-primary label-badge">41 / 100</span><strong>Total Score</strong></li><li class="list-group-item"><span class="label label-default label-badge">40</span><strong>Feature Score</strong></li><li class="list-group-item"><span class="label label-default label-badge">5 / 5</span><strong>UI Score</strong></li><li class="list-group-item"><span class="label label-default label-badge">5 / 5</span><strong>Code Score</strong></li></ul><h3>Cohort Projects Summary</h3><p>The following is a breakdown of projects for the overall cohort:</p><table class="table table-striped"><thead><tr><th>Score Rank</th><th>Total Projects</th><th>Percent Achieved</th></tr></thead><tbody><tr><td>Great</td><td>30</td><td>37%</td></tr><tr><td>Good</td><td>51</td><td>100%</td></tr></tbody></table></div><div class="col-md-2"><a target="_blank" href="../../../../github.com/codepath/cec78c32__none.html"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>&#160;Project Repo</a><img width="250" src="../../../../i.imgur.com/9f372f7b__xyz.gif"></div></div></div></div></div><div class="tab-pane" id="warmups"><div class="panel panel-default"><div class="panel-body markdown-body"><div class="action-bar pull-right hidden-print"></div><h1><a class="anchor" id="heading-pre-session-tasks" href="#heading-pre-session-tasks"><span class="glyphicon glyphicon-link"></span></a>Pre-Session Tasks</h1>
+<h3><a class="anchor" id="heading-due-before-monday-august-19th-at-1159pm-pdt" href="#heading-due-before-monday-august-19th-at-1159pm-pdt"><span class="glyphicon glyphicon-link"></span></a><strong>Due before Monday, August 19th at 11:59pm PDT</strong></h3>
+<p>There will is only one warm up question for this week, so you should spend some time reviewing the entire course of material to prepare for the final HackerRank. The final HackerRank will cover material from the entire course, so we recommend focusing on revisiting material you had trouble with.</p>
+<p>We will not be going over architecture interviews, but in the resources tab, there are helpful links and video walkthroughs to review for those types of questions.</p>
+<h2><a class="anchor" id="heading-warmup-problem" href="#heading-warmup-problem"><span class="glyphicon glyphicon-link"></span></a>Warmup problem</h2>
+<h4><a class="anchor" id="heading-required" href="#heading-required"><span class="glyphicon glyphicon-link"></span></a>Required</h4>
+<ul>
+<li><a href="../../../../leetcode.com/problems/implement-trie-prefix-tree/description/file_911ba86c.html">Implement Trie</a></li>
+</ul>
+<p>If you get stuck, please consult the <a href="../pages/hints/warmups/9f3165f5__design.html" class="internal" alt="Hints" title="Hints">Hints</a> page.</p>
+<h2><a class="anchor" id="heading-panel-on-tuesday" href="#heading-panel-on-tuesday"><span class="glyphicon glyphicon-link"></span></a>Panel on Tuesday</h2>
+<p>We'll have our last panel on Tuesday with two panelists (bios below). There is a sli.do for this panel for you to submit questions (about the interview process, resumes, internship advice, career questions, etc.). Feel free to add your questions to the <a href="../../../../app2.sli.do/event/1ohfr34i/ea41a9c2__questions.html">sli.do</a> and we'll go through them during the panel.</p>
+<p><strong><a href="../../../../app2.sli.do/event/1ohfr34i/ea41a9c2__questions.html">Submit questions for panelists here!</a></strong></p>
+</div></div></div><div class="tab-pane" id="report"><div class="panel panel-default"><div class="panel-body"><div class="row"><div class="col-md-11 markdown-body"><h2>Assigment Summary</h2><p>The following is the summary of your assignment for this unit:</p></div></div><div class="row"><div class="col-md-8"><ul class="list-group"><li class="list-group-item"><span class="label label-info label-badge">Good</span><strong>Overall Rank</strong></li><li class="list-group-item"><span class="label label-success label-badge">#48 / 81</span><strong>Rank Number</strong></li><li class="list-group-item"><span class="label label-primary label-badge">41 / 100</span><strong>Total Score</strong></li><li class="list-group-item"><span class="label label-default label-badge">40</span><strong>Feature Score</strong></li><li class="list-group-item"><span class="label label-default label-badge">5 / 5</span><strong>UI Score</strong></li><li class="list-group-item"><span class="label label-default label-badge">5 / 5</span><strong>Code Score</strong></li></ul><h3>Cohort Projects Summary</h3><p>The following is a breakdown of projects for the overall cohort:</p><table class="table table-striped"><thead><tr><th>Score Rank</th><th>Total Projects</th><th>Percent Achieved</th></tr></thead><tbody><tr><td>Great</td><td>30</td><td>37%</td></tr><tr><td>Good</td><td>51</td><td>100%</td></tr></tbody></table></div><div class="col-md-2"><a target="_blank" href="../../../../github.com/codepath/cec78c32__none.html"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>&#160;Project Repo</a><img width="250" src="../../../../i.imgur.com/9f372f7b__xyz.gif"></div></div></div></div></div><div class="tab-pane" id="session_one"><div class="panel panel-default"><div class="panel-body markdown-body"><div class="action-bar pull-right hidden-print"></div><h1><a class="anchor" id="heading-recap-and-design-questions-session-1" href="#heading-recap-and-design-questions-session-1"><span class="glyphicon glyphicon-link"></span></a>Recap and Design Questions - Session 1</h1>
+<p>Lecture Slides</p>
+<h2><a class="anchor" id="heading-in-class-exercise-design-a-parking-lot" href="#heading-in-class-exercise-design-a-parking-lot"><span class="glyphicon glyphicon-link"></span></a>In class exercise: Design a parking lot</h2>
+<p><strong>Question:</strong>  I&#8217;ve opened a mall and I want to build a parking lot for my new mall. How would you model this parking lot?</p>
+<p>For this question, discuss with your partner...</p>
+<ul>
+<li>What are the core classes involved in designing a parking lot?</li>
+<li>What would be methods associated with each of those classes?</li>
+<li>What data structures would you need to utilize to store the proper data?</li>
+<li>What questions would you ask your interviewer to narrow down the scope of the question?</li>
+</ul>
+<h2><a class="anchor" id="heading-in-class-exercises-part-2-50-minutes" href="#heading-in-class-exercises-part-2-50-minutes"><span class="glyphicon glyphicon-link"></span></a>In class exercises, part 2 (50 minutes)</h2>
+<p>Aim to spend around 15 - 20 minutes on each problem and go through the object oriented design steps we covered in class:</p>
+<ol>
+<li>Narrow down the scope of the problem</li>
+<li>Define important features</li>
+<li>Define core classes</li>
+<li>Reflect on how the core classes relate to one another</li>
+<li>Define class attributes</li>
+<li>Define methods for each class</li>
+</ol>
+<p><strong>Question #1: <a href="../../../../leetcode.com/problems/design-circular-queue/file_ae6cbb2d.html">Design circular queue</a></strong></p>
+<p><strong>Question #2: Design a hash table.</strong></p>
+<p>Design and implement a hash table that uses chaining (linked lists to handle collisions). What are the main methods you'd need to support for this hash table?</p>
+<p><strong>Question #3: Design an in memory file system.</strong></p>
+<p>Create the classes and methods within those classes for this in memory file system.</p>
+<h4><a class="anchor" id="heading-sample-solutions-to-design-questions" href="#heading-sample-solutions-to-design-questions"><span class="glyphicon glyphicon-link"></span></a>Sample Solutions to design questions</h4>
+<p>There are a few ways to approach these design questions, but here are sample solutions.</p>
+<ol>
+<li><a href="../../../../github.com/careercup/CtCI-6th-Edition/tree/master/Java/Ch%2007.%20Object-Oriented%20Design/9259cca4__Q7_12_Hash_Table.html">Design a hash table</a></li>
+<li><a href="../../../../github.com/careercup/CtCI-6th-Edition/tree/master/Java/Ch%2007.%20Object-Oriented%20Design/bd4bf1e9__Q7_11_File_System.html">Design an in memory file system</a></li>
+</ol>
+</div></div></div><div class="tab-pane" id="report"><div class="panel panel-default"><div class="panel-body"><div class="row"><div class="col-md-11 markdown-body"><h2>Assigment Summary</h2><p>The following is the summary of your assignment for this unit:</p></div></div><div class="row"><div class="col-md-8"><ul class="list-group"><li class="list-group-item"><span class="label label-info label-badge">Good</span><strong>Overall Rank</strong></li><li class="list-group-item"><span class="label label-success label-badge">#48 / 81</span><strong>Rank Number</strong></li><li class="list-group-item"><span class="label label-primary label-badge">41 / 100</span><strong>Total Score</strong></li><li class="list-group-item"><span class="label label-default label-badge">40</span><strong>Feature Score</strong></li><li class="list-group-item"><span class="label label-default label-badge">5 / 5</span><strong>UI Score</strong></li><li class="list-group-item"><span class="label label-default label-badge">5 / 5</span><strong>Code Score</strong></li></ul><h3>Cohort Projects Summary</h3><p>The following is a breakdown of projects for the overall cohort:</p><table class="table table-striped"><thead><tr><th>Score Rank</th><th>Total Projects</th><th>Percent Achieved</th></tr></thead><tbody><tr><td>Great</td><td>30</td><td>37%</td></tr><tr><td>Good</td><td>51</td><td>100%</td></tr></tbody></table></div><div class="col-md-2"><a target="_blank" href="../../../../github.com/codepath/cec78c32__none.html"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>&#160;Project Repo</a><img width="250" src="../../../../i.imgur.com/9f372f7b__xyz.gif"></div></div></div></div></div><div class="tab-pane" id="session_two"><div class="panel panel-default"><div class="panel-body markdown-body"><div class="action-bar pull-right hidden-print"></div><h1><a class="anchor" id="heading-extra-mock-interview-practice" href="#heading-extra-mock-interview-practice"><span class="glyphicon glyphicon-link"></span></a>Extra mock interview practice</h1>
+<h3><a class="anchor" id="heading-instructions-for-in-class-mock-interviews" href="#heading-instructions-for-in-class-mock-interviews"><span class="glyphicon glyphicon-link"></span></a>Instructions for in class mock interviews</h3>
+<p>Refer to this mock interview <a href="../../../../docs.google.com/document/d/1zbUY9vb8kdblmo793jz88w2YJnYotBJ0g3-8ePW4wFQ/2cf0ab56__edit.html">guide</a></p>
+<h2><a class="anchor" id="heading-mock-interview-prep-10-minutes" href="#heading-mock-interview-prep-10-minutes"><span class="glyphicon glyphicon-link"></span></a>Mock interview prep (10 minutes)</h2>
+<p>Designate one person as person A, the other as person B.</p>
+<p><strong>Person A will review this problem and then ask person B this problem: <a href="../../../../docs.google.com/document/d/1pRjds8rBdWphAYCpQnBpls36_hCqHnctZ9v5Qd3WlEI/75070c6c__edit.html">Insert Delete GetRandom O(1)</a></strong></p>
+<p><strong>Person B will review this problem and ask person A this question: <a href="../../../../docs.google.com/document/d/1v5MdZYgqBEY0jmkgkn0A8Xf__rd35ZosjzAcFd4glfA/4a946bb4__edit.html">LRU Cache</a></strong></p>
+<p>Spend 10 minutes prepping out the problem you were assigned. Below is a breakdown of how you should spend the fifteen minutes:</p>
+<ol>
+<li>Read and understand problem</li>
+<li>Think through possible test cases and edge cases</li>
+<li>Read through the solutions to the problem</li>
+<li>Create a new <a href="../../../../codepad.remoteinterview.io/file_249fcfbf.html">codepad</a> document and save the URL to be shared during the mock interviews.</li>
+</ol>
+<p>(If time permits) Come up with 3 helpful hints you could give when you&#8217;re conducting the interview to help the other person become &#8216;unstuck&#8217;</p>
+<h2><a class="anchor" id="heading-mock-interviewing-30-minutes-each-round" href="#heading-mock-interviewing-30-minutes-each-round"><span class="glyphicon glyphicon-link"></span></a>Mock interviewing (30 minutes each round)</h2>
+<p><strong>There will be 2 rounds of mock interviewing. Each round will be 35 minutes long and there should be a feedback period following each interview.</strong></p>
+<ol>
+<li>
+<p>Person A will begin the first round of interviews as the interviewer</p>
+<ul>
+<li>Interviewer introduces the problem, interviewees clarify the question</li>
+<li>Interviewees come up with example input/ output and write down pseudocode</li>
+<li>Actual coding</li>
+<li>End with a quick time/ space complexity analysis even if the coding is not complete.</li>
+</ul>
+</li>
+<li>
+<p>After the interview is over, provide feedback for how the session went.</p>
+<ul>
+<li>
+<p>Example feedback for the interviewees:</p>
+<ul>
+<li>What did the interviewee do well?</li>
+<li>Did the interviewees come up with an example input/ output before planning out the approach?</li>
+<li>Did the interviewees plan sufficiently before coding?</li>
+<li>Were the interviewees communicative throughout?</li>
+</ul>
+</li>
+<li>
+<p>Example feedback the interviewer:</p>
+<ul>
+<li>What did the interviewer do well?</li>
+<li>Did the interviewer clearly state the question?</li>
+<li>Did the interviewer help along the way?</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Repeat steps 1 &amp; 2 with person B as the interviewer.</p>
+</li>
+</ol>
+<h2><a class="anchor" id="heading-extra-time" href="#heading-extra-time"><span class="glyphicon glyphicon-link"></span></a>Extra time?</h2>
+<p>Try going working through the post assessment questions with your partner:</p>
+<ul>
+<li><a href="../../../../leetcode.com/problems/binary-search-tree-iterator/description/file_2d6308da.html">Binary search tree iterator</a></li>
+<li><a href="../../../../leetcode.com/problems/flatten-nested-list-iterator/description/file_9f3bf0a2.html">Flatten nested list iterator</a></li>
+</ul>
+</div></div></div><div class="tab-pane" id="report"><div class="panel panel-default"><div class="panel-body"><div class="row"><div class="col-md-11 markdown-body"><h2>Assigment Summary</h2><p>The following is the summary of your assignment for this unit:</p></div></div><div class="row"><div class="col-md-8"><ul class="list-group"><li class="list-group-item"><span class="label label-info label-badge">Good</span><strong>Overall Rank</strong></li><li class="list-group-item"><span class="label label-success label-badge">#48 / 81</span><strong>Rank Number</strong></li><li class="list-group-item"><span class="label label-primary label-badge">41 / 100</span><strong>Total Score</strong></li><li class="list-group-item"><span class="label label-default label-badge">40</span><strong>Feature Score</strong></li><li class="list-group-item"><span class="label label-default label-badge">5 / 5</span><strong>UI Score</strong></li><li class="list-group-item"><span class="label label-default label-badge">5 / 5</span><strong>Code Score</strong></li></ul><h3>Cohort Projects Summary</h3><p>The following is a breakdown of projects for the overall cohort:</p><table class="table table-striped"><thead><tr><th>Score Rank</th><th>Total Projects</th><th>Percent Achieved</th></tr></thead><tbody><tr><td>Great</td><td>30</td><td>37%</td></tr><tr><td>Good</td><td>51</td><td>100%</td></tr></tbody></table></div><div class="col-md-2"><a target="_blank" href="../../../../github.com/codepath/cec78c32__none.html"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>&#160;Project Repo</a><img width="250" src="../../../../i.imgur.com/9f372f7b__xyz.gif"></div></div></div></div></div><div class="tab-pane" id="assignment"><div class="panel panel-default"><div class="panel-body markdown-body"><div class="action-bar pull-right hidden-print"></div><h2><a class="anchor" id="heading-assignment-12" href="#heading-assignment-12"><span class="glyphicon glyphicon-link"></span></a>Assignment 12</h2>
+<h3><a class="anchor" id="heading-due-before-monday-august-26th-at-1159pm-pdt" href="#heading-due-before-monday-august-26th-at-1159pm-pdt"><span class="glyphicon glyphicon-link"></span></a><strong>Due before Monday, August 26th at 11:59pm PDT</strong></h3>
+<h3><a class="anchor" id="heading-hackerrank-required" href="#heading-hackerrank-required"><span class="glyphicon glyphicon-link"></span></a>
+<a href="../../../../hr.gs/59da0cda__codepath-design.html">HackerRank</a> (required)</h3>
+<p>The assignment for the week is to complete a HackerRank assessment. The assessment will contain a mix of multiple choice questions and coding problems and should take around 90 minutes.</p>
+<p>The final question is an optional harder bonus coding problem if you want to challenge yourself a step further.</p>
+<h3><a class="anchor" id="heading-post-session-practice-problems-not-required" href="#heading-post-session-practice-problems-not-required"><span class="glyphicon glyphicon-link"></span></a>Post-session practice problems (not required)</h3>
+<p>The problems below are for extra practice and are not required. These two questions involve understanding what an iterator is. If you are unfamiliar with what iterators are, <a href="../../../../cs61a.org/study-guide/d542f349__iterators.html">this guide</a> explains the topic really well.</p>
+<ul>
+<li><a href="../../../../leetcode.com/problems/binary-search-tree-iterator/description/file_2d6308da.html">Binary search tree iterator</a></li>
+<li><a href="../../../../leetcode.com/problems/flatten-nested-list-iterator/description/file_9f3bf0a2.html">Flatten nested list iterator</a></li>
+</ul>
+<p>If you get stuck, please consult the <a href="../pages/hints/assignments/149ed3c5__design.html" class="internal" alt="Hints" title="Hints">Hints</a> page.</p>
+</div></div></div><div class="tab-pane" id="report"><div class="panel panel-default"><div class="panel-body"><div class="row"><div class="col-md-11 markdown-body"><h2>Assigment Summary</h2><p>The following is the summary of your assignment for this unit:</p></div></div><div class="row"><div class="col-md-8"><ul class="list-group"><li class="list-group-item"><span class="label label-info label-badge">Good</span><strong>Overall Rank</strong></li><li class="list-group-item"><span class="label label-success label-badge">#48 / 81</span><strong>Rank Number</strong></li><li class="list-group-item"><span class="label label-primary label-badge">41 / 100</span><strong>Total Score</strong></li><li class="list-group-item"><span class="label label-default label-badge">40</span><strong>Feature Score</strong></li><li class="list-group-item"><span class="label label-default label-badge">5 / 5</span><strong>UI Score</strong></li><li class="list-group-item"><span class="label label-default label-badge">5 / 5</span><strong>Code Score</strong></li></ul><h3>Cohort Projects Summary</h3><p>The following is a breakdown of projects for the overall cohort:</p><table class="table table-striped"><thead><tr><th>Score Rank</th><th>Total Projects</th><th>Percent Achieved</th></tr></thead><tbody><tr><td>Great</td><td>30</td><td>37%</td></tr><tr><td>Good</td><td>51</td><td>100%</td></tr></tbody></table></div><div class="col-md-2"><a target="_blank" href="../../../../github.com/codepath/cec78c32__none.html"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>&#160;Project Repo</a><img width="250" src="../../../../i.imgur.com/9f372f7b__xyz.gif"></div></div></div></div></div><div class="tab-pane" id="links"><div class="panel panel-default"><div class="panel-body markdown-body"><div class="action-bar pull-right hidden-print"></div><h3><a class="anchor" id="heading-system-design-question-resources" href="#heading-system-design-question-resources"><span class="glyphicon glyphicon-link"></span></a>System design question resources</h3>
+<ul>
+<li>
+<p>Fundamentals of system design</p>
+<ul>
+<li><a href="../../../../hackernoon.com/68615a1f__fundamentals-of-system-design-part-1-c87b1d2bfd31.html">Part 1</a></li>
+<li><a href="../../../../hackernoon.com/ce25d418__fundamentals-of-system-design-part-2-abbe437ce2dd.html">Part 2</a></li>
+<li><a href="../../../../hackernoon.com/b904b14e__fundamentals-of-system-design-part-3-8da61773a631.html">Part 3</a></li>
+<li><a href="../../../../hackernoon.com/d51c6c4b__fundamentals-of-system-design-part-4-d6a62f3fa779.html">Part 4</a></li>
+</ul>
+</li>
+<li>
+<p><a href="../../../../github.com/donnemartin/8c738f79__system-design-primer.html">How to approach a system design interview</a></p>
+<ul>
+<li><a href="../../../../github.com/donnemartin/40a8857a__system-design-primer.html">VERY thorough system design glossary</a></li>
+<li><a href="../../../../github.com/shashank88/42617598__system_design.html">System Design Preparation</a></li>
+</ul>
+</li>
+<li>
+<p><a href="../../../../www.interviewbit.com/courses/system-design/file_3c3e121d.html">InterviewBit System Design Tutorial</a></p>
+</li>
+<li>
+<p><a href="../../../../jg.gg/2016/07/31/architecture-and-systems-design-interview/file_1dc14197.html">Architecture and Systems Design Interview</a></p>
+</li>
+<li>
+<p><span class="glyphicon glyphicon-film"></span>&#160;<a href="../../../course_videos/advanced_software_eng/youtube/42f96766__0s1aVoeF0Gs.html" alt="Refdash System Design Interview Overview" title="Refdash System Design Interview Overview">Refdash System Design Interview Overview</a></p>
+</li>
+<li>
+<p><span class="glyphicon glyphicon-film"></span>&#160;<a href="../../../course_videos/advanced_software_eng/youtu/281c5b0b__-W9F__D3oY4.html" alt="Video covering web scalability" title="Video covering web scalability">Video covering web scalability</a></p>
+</li>
+<li>
+<p><a href="../../../../youtu.be/94621b4f__modXC5IWTJI.html">Back of the envelope calculations</a></p>
+</li>
+</ul>
+<h3><a class="anchor" id="heading-system-design-question-walkthroughs" href="#heading-system-design-question-walkthroughs"><span class="glyphicon glyphicon-link"></span></a>System design question walkthroughs</h3>
+<ul>
+<li>
+<a href="../../../../www.interviewcake.com/question/java/2781e879__url-shortener.html">Design a URL shortener Guide</a>
+<ul>
+<li><a href="../../../../vimeo.com/da17d9db__96844401.html">Lessons Learned Building Distributed Systems at Bitly</a></li>
+</ul>
+</li>
+<li>
+<span class="glyphicon glyphicon-film"></span>&#160;<a href="../../../course_videos/advanced_software_eng/youtube/3ea672cc__KmAyPUv9gOY.html" alt="Design Twitter Video Walkthrough" title="Design Twitter Video Walkthrough">Design Twitter Video Walkthrough</a>
+</li>
+<li>
+<span class="glyphicon glyphicon-film"></span>&#160;<a href="../../../course_videos/advanced_software_eng/youtube/a5b5d33f__J3DY3Te3A_A.html" alt="Design Lyft/Uber Video Walkthrough" title="Design Lyft/Uber Video Walkthrough">Design Lyft/Uber Video Walkthrough</a>
+</li>
+</ul>
+</div></div></div><div class="tab-pane" id="report"><div class="panel panel-default"><div class="panel-body"><div class="row"><div class="col-md-11 markdown-body"><h2>Assigment Summary</h2><p>The following is the summary of your assignment for this unit:</p></div></div><div class="row"><div class="col-md-8"><ul class="list-group"><li class="list-group-item"><span class="label label-info label-badge">Good</span><strong>Overall Rank</strong></li><li class="list-group-item"><span class="label label-success label-badge">#48 / 81</span><strong>Rank Number</strong></li><li class="list-group-item"><span class="label label-primary label-badge">41 / 100</span><strong>Total Score</strong></li><li class="list-group-item"><span class="label label-default label-badge">40</span><strong>Feature Score</strong></li><li class="list-group-item"><span class="label label-default label-badge">5 / 5</span><strong>UI Score</strong></li><li class="list-group-item"><span class="label label-default label-badge">5 / 5</span><strong>Code Score</strong></li></ul><h3>Cohort Projects Summary</h3><p>The following is a breakdown of projects for the overall cohort:</p><table class="table table-striped"><thead><tr><th>Score Rank</th><th>Total Projects</th><th>Percent Achieved</th></tr></thead><tbody><tr><td>Great</td><td>30</td><td>37%</td></tr><tr><td>Good</td><td>51</td><td>100%</td></tr></tbody></table></div><div class="col-md-2"><a target="_blank" href="../../../../github.com/codepath/cec78c32__none.html"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>&#160;Project Repo</a><img width="250" src="../../../../i.imgur.com/9f372f7b__xyz.gif"></div></div></div></div></div></div></div></div></div></body><script src="../../../assets-compiled/24094d0f__application.js"></script></html>

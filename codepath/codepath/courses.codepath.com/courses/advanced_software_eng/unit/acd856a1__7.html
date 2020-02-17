@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US"><!--
+
+* AerWebCopy Engine [version 6.1.1]
+* Copyright Aeroson Systems & Co.
+* File mirrored from https://courses.codepath.com/courses/advanced_software_eng/unit/7#!overview
+* At UTC time: 2020-02-16 22:17:09.674172
+
+--><head><title>Week 7 - Advanced Software Engineering | CodePath Courses</title><link href="../../../assets-compiled/45343e60__application.css" rel="stylesheet" type="text/css"><link href="../../../stylesheets/5aa27339__print.css" media="print" rel="stylesheet" type="text/css"><meta charset="UTF-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="noindex, nofollow" name="robots"><script data-api_key="d6442453" data-environment="production" src="../../../../js.honeybadger.io/v0.4/46b49c45__honeybadger.min.js" type="text/javascript"></script><script async="" src="../../../../www.googletagmanager.com/gtag/a66ae154__js.js"></script><script type="text/javascript">// Google analytics setup
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-47712505-3', {
+  'user_id': "20280"
+});
+// Alert browser issues!
+// https://browser-update.org/#test-bu
+var $buoop = {vs:{i:10,f:-4,o:-4,s:8,c:-4},api:4};
+function $buo_f(){
+ var e = document.createElement("script");
+ e.src = "//browser-update.org/update.min.js";
+ document.body.appendChild(e);
+};
+try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+catch(e){window.attachEvent("onload", $buo_f)}</script></head><body><div class="navbar navbar-default hidden-print" id="main-nav"><div class="container"><div class="navbar-header"><button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/">CodePath Courses</a></div><div class="navbar-collapse collapse"><ul class="nav navbar-nav"><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">Courses <b class="caret"></b></a><ul class="dropdown-menu"><li class="active"><a href="../../416426db__advanced_software_eng.html">Advanced Software Engineering</a></li><li><a href="../../0e9791e8__cybersecurity_university.html">Cybersecurity University</a></li></ul></li></ul><ul class="nav navbar-nav"><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">Quick Actions <b class="caret"></b></a><ul class="dropdown-menu"><li><a target="_blank" href="../../../../apply.codepath.com/attendance/advanced-software-engineering-summer-2019/excused-absence/file_326cd0b9.html"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>&#160;&#160;Request Excused Absence</a></li><li><a target="_blank" href="../../../../discussions.codepath.com/courses/advanced_software_eng/questions/6e89333c__new.html"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>&#160;&#160;Ask a Question</a></li><li><a target="_blank" href="../../../../apply.codepath.com/group-formation/advanced-software-engineering-summer-2019/ideas/file_f7d913cb.html"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>&#160;&#160;Add an App Idea</a></li><li><a target="_blank" href="../../../../discussions.codepath.com/courses/advanced_software_eng/notes/b2be2eb3__new.html"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span>&#160;&#160;Post a Note</a></li><li><a target="_blank" href="../../../../apply.codepath.com/organizations/codepathorg/cohorts/179/participant/withdraw/file_36827b4a.html"><span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>&#160;&#160;Withdraw from Course</a></li></ul></li></ul><ul class="nav navbar-nav navbar-right"><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" style="overflow:hidden"><div class="pull-left"><img width="20" class="img-circle img-responsive" src="../../../../avatars3.githubusercontent.com/u/5c416262__14141688.jpg"></div>&#160;<div class="pull-right">Steven Melamud <b class="caret"></b></div></a><ul class="dropdown-menu"><li><a data-method="delete" href="../../../339d23fb__sessions.html">Logout</a></li></ul></li></ul></div></div></div><div class="container"><div class="title clearfix"><h1>Advanced Software Engineering</h1><p class="alert alert-info hidden-print">Need help?&#160;Post on our <a target="blank" class="alert-link" href="../../../../discussions.codepath.com/file_ea13434d.html">discussion system</a>&#160;or email us at <a class="alert-link" href="../../../../../../../../../../31953362__support%40codepath.html">support@codepath.org</a></p></div><div class="row"><div class="col-md-2 sidebar hidden-print"><ul class="nav nav-pills nav-stacked"><li><a href="../pages/191f81ee__bootcamp_structure.html">Overview</a></li><li><a href="./8bac841e__1.html"><span>Week 1 &#160;</span></a></li><li><a href="./de6b1f8f__2.html"><span>Week 2 &#160;</span></a></li><li><a href="./de6816aa__3.html"><span>Week 3 &#160;</span></a></li><li><a href="./edcbee9e__4.html"><span>Week 4 &#160;</span></a></li><li><a href="./70abd764__5.html"><span>Week 5 &#160;</span></a></li><li><a href="./5923ce66__6.html"><span>Week 6 &#160;</span></a></li><li class="active"><a href="./acd856a1__7.html"><span>Week 7 &#160;</span></a></li><li><a href="./d99406e4__8.html"><span>Week 8 &#160;</span></a></li><li><a href="./297903ed__9.html"><span>Week 9 &#160;</span></a></li><li><a href="./0211c7e0__10.html"><span>Week 10 &#160;</span></a></li><li><a href="./381b5c59__11.html"><span>Week 11 &#160;</span></a></li><li><a href="./a4ee6ebb__12.html"><span>Week 12 &#160;</span></a></li><li><a href="../pages/f9dda471__resources.html">Resources</a></li><li><a href="../pages/844b6942__submission_guide.html">Submission Guide</a></li><li><a href="../pages/d73dc72b__career_center.html">Career Center</a></li>&#160;</ul></div><div class="col-md-10"><ul class="nav nav-tabs hidden-print"><li><a data-toggle="tab" href="#overview"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>&#160;Overview</a></li><li><a data-toggle="tab" href="#session_one">Session #1</a></li><li><a data-toggle="tab" href="#session_two">Session #2</a></li><li><a data-toggle="tab" href="#assignment">Assignment</a></li></ul><div class="tab-content section-content" style="height: 1000px;"><div class="tab-pane" id="overview"><div class="panel panel-default"><div class="panel-body markdown-body"><div class="action-bar pull-right hidden-print"></div><h2><a class="anchor" id="heading-week-7-review" href="#heading-week-7-review"><span class="glyphicon glyphicon-link"></span></a>Week 7 - Review</h2>
+<p>This week will be a project-centered review week. We will review key topics such as trees, strings, arrays and hashmaps while working on a project that incorporates these data structures.</p>
+<h3><a class="anchor" id="heading-goals" href="#heading-goals"><span class="glyphicon glyphicon-link"></span></a>Goals</h3>
+<ul>
+<li>Review key data structures: trees, graphs, strings, arrays, hashmaps</li>
+</ul>
+<h3><a class="anchor" id="heading-before-our-weekly-session" href="#heading-before-our-weekly-session"><span class="glyphicon glyphicon-link"></span></a>Before our weekly session</h3>
+<p>Since this is a review and project week, we will not have any warm up questions that you will be required to submit. However, this is a great time for you to go back to topics and problems from the past few weeks that you had found more challenging.</p>
+<p>It would also be advantageous to get an overview of what the project entails so you can ask questions early on. <strong>Aim to spend 5-10 hours</strong> on the project. Start early!</p>
+<h3><a class="anchor" id="heading-after-the-session" href="#heading-after-the-session"><span class="glyphicon glyphicon-link"></span></a>After the session</h3>
+<p><strong>Due before Monday, July 22nd at 11:59pm PDT</strong></p>
+<p>The only thing that you&#8217;re required to submit this week will be the code and analysis summary from the project, as outlined in the project spec <a href="../../../../docs.google.com/document/d/1RcwQSXmcyxLWJ8FezW5PNOEAVI08IYxpOdwRtZbZ4KI/03aceef3__edit.html">here</a>. You will need to create a new GitHub repo, and push all your code and analysis summary to the repo. For submission, you will be submitting the link to your Github repo.</p>
+<h3><a class="anchor" id="heading-panel-2-team-dynamics" href="#heading-panel-2-team-dynamics"><span class="glyphicon glyphicon-link"></span></a>Panel 2 - Team Dynamics</h3>
+<h4><a class="anchor" id="heading-overview" href="#heading-overview"><span class="glyphicon glyphicon-link"></span></a>Overview</h4>
+<p>This week will be the second of the three panel workshops where you'll get to meet and interact with inspiring industry professionals.</p>
+<h4><a class="anchor" id="heading-session-details" href="#heading-session-details"><span class="glyphicon glyphicon-link"></span></a>Session Details</h4>
+<ul>
+<li>
+<p><strong>Saturday, July 20th</strong></p>
+</li>
+<li>
+<p><strong>&#128421; Join the <a href="../../../../zoom.us/j/b6b584b8__337031926.html">Session Video Call</a></strong></p>
+</li>
+</ul>
+<h4><a class="anchor" id="heading-this-weeks-industry-panel" href="#heading-this-weeks-industry-panel"><span class="glyphicon glyphicon-link"></span></a>This Week's Industry Panel</h4>
+<p>In this Product/Entrepreneurship panel, entrepreneurs and executives will share their thoughts and answer questions focusing on <strong>Team Dynamics</strong>.</p>
+<h4><a class="anchor" id="heading-action-required" href="#heading-action-required"><span class="glyphicon glyphicon-link"></span></a>&#129338;ACTION REQUIRED</h4>
+<div class="alert alert-warning inset-text">
+We've assembled an amazing group of professionals with great experiences in the industry. Please take a moment to complete the following steps ahead of the session.
+<ol>
+<li>Learn about our panelists (listed below) by clicking their names and visiting their linkedin profiles.</li>
+<li>
+<strong><a href="../../../../app.sli.do/event/fc7ti8my/live/f4b9ff7e__questions.html">&#128221;Post and upvote questions</a></strong> for our panelists!</li>
+</ol>
+<p></p></div>
+<h5><a class="anchor" id="heading-panelists" href="#heading-panelists"><span class="glyphicon glyphicon-link"></span></a>PANELISTS</h5>
+<ul>
+<li>
+<p><strong><a href="../../../../www.linkedin.com/in/d613c25a__sean-haneberg-66489039.html">Sean Haneberg</a></strong>, Senior Software Engineer at Hulu</p>
+</li>
+<li>
+<p><strong><a href="../../../../www.linkedin.com/in/753790bb__amyfarrow.html">Amy Farrow</a></strong>, TPM Manager at Lyft</p>
+</li>
+<li>
+<p><strong><a href="../../../../www.linkedin.com/in/0622d365__seth-koren-herve-699379b.html">Seth Herve</a></strong>, Software Engineer at The ExecRanks</p>
+</li>
+<li>
+<p>&#128250; Stay tuned for this week's panel moderator!</p>
+</li>
+</ul>
+</div></div></div><div class="tab-pane" id="session_one"><div class="panel panel-default"><div class="panel-body markdown-body"><div class="action-bar pull-right hidden-print"></div><h2><a class="anchor" id="heading-review-session-1" href="#heading-review-session-1"><span class="glyphicon glyphicon-link"></span></a>Review - Session 1</h2>
+<h3><a class="anchor" id="heading-lecture-slides" href="#heading-lecture-slides"><span class="glyphicon glyphicon-link"></span></a><a href="../../../../speakerdeck.com/calren/f2f245be__week-7-review-session-1.html">Lecture Slides</a></h3>
+<h3><a class="anchor" id="heading-pair-programming" href="#heading-pair-programming"><span class="glyphicon glyphicon-link"></span></a>Pair Programming</h3>
+<p>For today's in class exercise, we are going to try pair programming for our challenge questions.</p>
+<p>When doing pair programming, each person has one of two roles:
+Driver or Navigator.</p>
+<p>The Navigator is in charge of thinking about how to approach the problem, and catching bugs while the Driver is typing out code.</p>
+<p>The driver is in charge of writing the actual code.</p>
+<ol>
+<li>Start a new document in repl.it (or whatever your favorite code collaboration editor is), and invite your group members.</li>
+<li>Start off by having each person write one test case as part of the Understand step in UMPIRE.</li>
+<li>Talk through different approaches of how to solve the problem and agree on one approach to code up.</li>
+<li>The person who originally came up with the approach of how the solve the problem should be the Navigator while the other person should act as the Driver.  (If the solution was agreed upon together, randomly assign the roles).</li>
+<li>The Navigator should explain their thought process so that the Driver has enough information and context to code up the solution.</li>
+<li>Once you've finished one problem, switch off with the Navigator / Driver roles and start on another problem.</li>
+</ol>
+<h4><a class="anchor" id="heading-challenge-questions" href="#heading-challenge-questions"><span class="glyphicon glyphicon-link"></span></a>Challenge Questions</h4>
+<ol>
+<li><a href="../../../../leetcode.com/problems/merge-intervals/file_61d0a7bb.html">Merge Intervals</a></li>
+<li><a href="../../../../leetcode.com/problems/letter-combinations-of-a-phone-number/file_768542bc.html">Letter Combinations of Phone Number</a></li>
+<li><a href="../../../../leetcode.com/problems/house-robber-iii/description/file_5eea5bd5.html">House Robber</a></li>
+<li><a href="../../../../leetcode.com/problems/multiply-strings/description/file_a6bdc8c7.html">Multiply Strings</a></li>
+</ol>
+</div></div></div><div class="tab-pane" id="session_two"><div class="panel panel-default"><div class="panel-body markdown-body"><div class="action-bar pull-right hidden-print"></div><h2><a class="anchor" id="heading-review-session-2" href="#heading-review-session-2"><span class="glyphicon glyphicon-link"></span></a>Review - Session 2</h2>
+<h3><a class="anchor" id="heading-lecture-slides" href="#heading-lecture-slides"><span class="glyphicon glyphicon-link"></span></a><a href="../../../../speakerdeck.com/calren/88952923__week-7-review-session-2.html">Lecture Slides</a></h3>
+<h3><a class="anchor" id="heading-debugging" href="#heading-debugging"><span class="glyphicon glyphicon-link"></span></a>Debugging</h3>
+<p>In the session we will work on our debugging skills.</p>
+<p>One of the most stressful parts of an interview is trying to debug your own code under time pressure. You&#8217;ve implemented a solution, but now the interviewer gives an example of when the implementation doesn&#8217;t work correctly and you&#8217;re tasked with fixing the code so that it&#8217;ll work properly.</p>
+<p>We have provided some buggy code snippets along with some test cases. The goal for your group will be to fix the code snippets so all the test cases passes.</p>
+<p>Once you and your group have decided whether to work on the problem in Java or Python:</p>
+<ol>
+<li>Copy the buggy code from HackMD to a <a href="../../../../codeinterview.io/file_070d5527.html">codepad</a>
+</li>
+<li>Make sure the code runs and gives outputs</li>
+<li>Read through and understand the problem</li>
+<li>Understand the &#8216;almost&#8217;-solution and trace through the code with one of the test cases we provide</li>
+<li>Try to fix the code so all tests pass (Try to fix it without print statements first. Imagine if this was like a whiteboarding interview.)</li>
+</ol>
+<p>The list of challenge questions along with their code can be found here:
+<a href="../../../../docs.google.com/document/d/1Sz0smiZFKh7bEAYwNuMHwP213sCPi5nAvcd76AEg1YY/file_cc314bb1.html">https://docs.google.com/document/d/1Sz0smiZFKh7bEAYwNuMHwP213sCPi5nAvcd76AEg1YY/</a></p>
+</div></div></div><div class="tab-pane" id="assignment"><div class="panel panel-default"><div class="panel-body markdown-body"><div class="action-bar pull-right hidden-print"><span class="section-action"><button class="btn btn-primary" onclick="LightBox.showLightBoxWithIds('lightbox-assignments', 'form-assignments')"><span class="glyphicon glyphicon-open" aria-hidden="true"></span>&#160;Submit</button></span>
+<div class="lightbox" id="lightbox-assignments"><form action="../../../submissions/4179c109__create_or_update_submission.html" accept-charset="UTF-8" class="form-horizontal form-submission" id="form-assignments" method="post"><div class="title"></div><button aria-label="Close" class="close" type="button"><span aria-hidden="true"> &#215;</span></button><h2>Submission</h2><p>Please enter your assignment submission info. After you submit, you can keep working and resubmit at any time.</p><label>GitHub Project URL</label><div class="form-group has-feedback"><div class="col-sm-12"><input type="text" name="git_repo_url" placeholder="https://github.com/username/Twitter" required="required" class="form-control" pattern="^https?:\/\/github.com\/.{2,}?\/.{2,}$" data-error="Please enter the url to your GitHub Repo (Example: https://github.com/username/TwitterLite)"><span aria-hidden="true" class="glyphicon form-control-feedback"></span><div class="help-block with-errors"></div></div></div><label>GIF or MP4 Video URL (Drag a GIF here to upload)</label><div class="form-group has-feedback"><div class="col-sm-12"><input type="text" name="gif_remote_url" placeholder="https://i.imgur.com/xyz.gif" required="required" class="form-control" pattern="^https?:\/\/.+?\/.+?\.(gifv?|mp4)(.+)?" data-error="Please enter a link to your GIF or MP4 (Example: https://i.imgur.com/U3a7L.gif)"><span aria-hidden="true" class="glyphicon form-control-feedback"></span><div class="help-block with-errors"></div></div></div><label>Hours Spent</label><div class="form-group"><div class="col-sm-12"><input type="number" name="hours_spent" placeholder="Number of hours" required="required" class="form-control" min="0" max="99" step="0.1"></div></div><label>Notes</label><div class="form-group"><div class="col-sm-12"><textarea name="notes" rows="2" cols="" placeholder="Any additional notes" class="form-control noresize">
+</textarea></div></div><div class="form-group"><div class="col-sm-12"><input type="submit" value="Submit" class="btn btn-primary"></div></div><input type="hidden" name="course" value="advanced_software_eng"><input type="hidden" name="unit" value="7"><input type="hidden" name="id"><input type="hidden" name="assignment" value="1256"><input type="hidden" name="redirect_anchor" value="assignment"></form></div></div><h2><a class="anchor" id="heading-assignment-7" href="#heading-assignment-7"><span class="glyphicon glyphicon-link"></span></a>Assignment 7</h2>
+<h3><a class="anchor" id="heading-due-before-monday-july-22nd-at-1159pm-pdt" href="#heading-due-before-monday-july-22nd-at-1159pm-pdt"><span class="glyphicon glyphicon-link"></span></a><strong>Due before Monday, July 22nd at 11:59pm PDT</strong></h3>
+<p>The only assignment you have to turn in this week will be the work around the project. This assignment is optional. This means you will not be marked for not submitting it on time. However, for those people who chose to submit, we will still be evaluating your project and grading it based on the scoring rubric.</p>
+<p>The complete project spec and requirements can be found here:<br>
+<a href="../../../../docs.google.com/document/d/1RcwQSXmcyxLWJ8FezW5PNOEAVI08IYxpOdwRtZbZ4KI/03aceef3__edit.html">https://docs.google.com/document/d/1RcwQSXmcyxLWJ8FezW5PNOEAVI08IYxpOdwRtZbZ4KI/edit?usp=sharing</a></p>
+<p>Before you start, you should create a new GitHub repo specific for this week's project. This is where you will push all your code and your final analysis. For submission we will be asking you to submit the link to your GitHub repo. When we are grading your projects, we expect to see:</p>
+<ol>
+<li>The code that you wrote to complete each step of the project including all the required methods as outlined in Step 8a in the project spec and</li>
+<li>A PDF document that summarizes your findings as outlined in Step 7 of the project spec.</li>
+</ol>
+<p><strong>For the required &#8220;GIF or MP4 Video URL" field, feel free to put in your favorite GIF (doesn't have to be related to your project!)</strong></p>
+<p>If you are not familiar with using GitHub, we have outlined the steps to setting up and pushing a project here :<br>
+<a href="../../../../courses.codepath.org/courses/advanced_software_eng/pages/8c6e877f__submitting_assignments.html">https://courses.codepath.org/courses/advanced_software_eng/pages/submitting_assignments</a></p>
+</div></div></div></div></div></div></div></body><script src="../../../assets-compiled/24094d0f__application.js"></script></html>
